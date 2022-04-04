@@ -7,10 +7,10 @@ on:
 
 jobs:
   info:
-  runs-on: ubuntu-latest
-  steps:
-  - name: Print
-    run: echo $${{ github.event  }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print
+        run: echo $${{ github.event  }}
 
   build:
     runs-on: ubuntu-latest
