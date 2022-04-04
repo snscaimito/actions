@@ -17,7 +17,7 @@ jobs:
 
   only_pr:
     runs-on: ubuntu-latest
-    if: ${{ github.event.pull_request.synchronize == true }}
+    if: ${{ github.event.pull_request.opened == true }}
 
     steps:
       - uses: actions/checkout@v3
