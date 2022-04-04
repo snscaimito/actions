@@ -20,6 +20,18 @@ jobs:
       - name: Run a one-line script
         run: echo ${{ github.event.ref }}
 
+      - name: Action
+        run: echo ${{ github.event.action }}
+
+      - name: Pull request is draft
+        run: echo ${{ github.event.pull_request.draft }}
+
+      - name: Pull request is draft
+        run: echo ${{ github.event.pull_request.draft }}
+
+      - name: Pull request state
+        run: echo ${{ github.event.pull_request.state }}
+
   only_pr:
     runs-on: ubuntu-latest
     if: ${{ github.event.pull_request.opened == true }}
